@@ -94,6 +94,9 @@ img {
   line-height: 36px;
   margin: 0;
 }
+h2 {
+  margin-bottom: 36px;
+}
 
 .text {
   font-size: 14px;
