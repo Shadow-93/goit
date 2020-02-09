@@ -16,6 +16,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
 }
@@ -66,12 +67,14 @@ body {
   text-decoration: none;
   font-size: 14px;
   line-height: 11px;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   color: #0f0101;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #1abc9c;
+  font-weight: 900;
 }
 
 .site-navigation li {
@@ -188,6 +191,8 @@ body {
   font-weight: 400;
 }
 button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   border-style: none;
   text-align: center;
   background-color: #1abc9c;
