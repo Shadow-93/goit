@@ -44,7 +44,7 @@ body {
   float: left;
   font-size: 30px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .logo a {
   text-transform: uppercase;
@@ -53,11 +53,10 @@ body {
 }
 .logo::first-letter {
   color: #1abc9c;
-  font-weight: bold;
+  font-weight: 900;
 }
 .site-navigation {
   list-style: none;
-  width: 475px;
   margin: 0;
   padding: 0;
   float: right;
@@ -68,13 +67,12 @@ body {
   font-size: 14px;
   line-height: 11px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #0f0101;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #1abc9c;
-  font-weight: 900;
 }
 
 .site-navigation li {
@@ -91,6 +89,7 @@ body {
   color: #515151;
   font-size: 48px;
   line-height: 32px;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -140,7 +139,7 @@ body {
 .name {
   float: left;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0;
   padding-left: 14px;
   width: 200px;
@@ -167,6 +166,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 600;
   float: left;
 }
 .news li:not(:last-child) {
@@ -191,14 +191,21 @@ body {
   font-weight: 400;
 }
 button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
   border-style: none;
   text-align: center;
   background-color: #1abc9c;
   width: 160px;
   height: 50px;
-  color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.more a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ffffff;
 }
