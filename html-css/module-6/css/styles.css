@@ -45,14 +45,15 @@ input[type="radia"].visualy-hiden {
 /* Header */
 
 .site-navigation {
-  height: 50px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .logo {
   margin: 0;
   padding: 0;
+  line-height: 36px;
 }
 .logo a {
   text-decoration: none;
@@ -211,7 +212,6 @@ input[type="radia"].visualy-hiden {
   margin: 0;
   padding: 0;
   padding-top: 90px;
-  /* transition: background-image 0.2s linear; */
 }
 .name {
   color: #333333;
@@ -240,10 +240,9 @@ input[type="radia"].visualy-hiden {
 .team-list li:hover .overlay {
   background-image: linear-gradient(
     to top,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
   );
-  opacity: 0.9;
   transform: translate(-10px, -10px);
   z-index: 1;
 }
@@ -274,7 +273,7 @@ input[type="radia"].visualy-hiden {
   justify-content: space-between;
   align-content: center;
 }
-.sosials button {
+.sosials a {
   margin: 0;
   padding: 0;
   width: 56px;
@@ -306,8 +305,8 @@ input[type="radia"].visualy-hiden {
   background-repeat: no-repeat;
   background-position: center;
 }
-.sosials button:hover,
-.sosials button:focus {
+.sosials a:hover,
+.sosials a:focus {
   background-color: #95e1d3;
 }
 .relative:hover .sosials {
