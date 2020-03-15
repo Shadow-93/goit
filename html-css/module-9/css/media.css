@@ -1,0 +1,83 @@
+@media (max-width: 767px) {
+  .page-header {
+    padding-bottom: 36px;
+  }
+  .article {
+    padding-bottom: 20px;
+  }
+  .sub-article {
+    width: 220px;
+    padding-bottom: 18px;
+  }
+  .authorisation {
+    padding-top: 20px;
+    padding-bottom: 118px;
+  }
+  .card:not(:last-child) {
+    padding-bottom: 28px;
+  }
+  .partner-list {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+  .partners {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 230px;
+  }
+}
+@media (min-width: 768px) {
+  .banner {
+    min-height: 700px;
+    width: 100%;
+  }
+  .page-header {
+    padding-top: 38px;
+    padding-bottom: 148px;
+  }
+  .authorisation {
+    padding: 0px;
+  }
+  .article {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .sub-article {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+  .partner-list {
+    padding: 72px 20px 40px;
+  }
+  .partners {
+    padding-top: 34px;
+    padding-bottom: 38px;
+  }
+  .card {
+    text-align: center;
+    margin: 0;
+  }
+  .card:nth-child(2) {
+    order: 3;
+  }
+  .card:nth-child(4) {
+    order: 4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 940px) {
+  .card:not(:nth-last-child(2n + 1)) {
+    padding-bottom: 28px;
+  }
+  .partners {
+    width: 492px;
+  }
+}
+
+@media (min-width: 940px) {
+  .partner {
+    padding: 72px 0 72px;
+  }
+}
