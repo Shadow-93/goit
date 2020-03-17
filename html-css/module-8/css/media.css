@@ -18,12 +18,12 @@
 @media (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0 10px;
   }
   .banner {
     min-height: 700px;
     min-width: 768px;
     width: 100%;
-    padding: 0 10px;
   }
   .page-header {
     justify-content: space-around;
@@ -67,7 +67,7 @@
     order: 4;
   }
 }
-@media (min-width: 768px) and (max-width: 940px) {
+@media (min-width: 768px) and (max-width: 939px) {
   .partners-list:not(:nth-last-child(2n + 1)) {
     padding-bottom: 28px;
   }
