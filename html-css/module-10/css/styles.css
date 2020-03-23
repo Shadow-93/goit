@@ -47,21 +47,13 @@ button {
 .article {
   margin: 0;
   padding: 0;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
   font-size: 24px;
   line-height: 27px;
   font-weight: 400;
   text-align: center;
-  color: #333333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
-.article-span {
+.article--span {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -69,7 +61,8 @@ button {
   text-transform: uppercase;
   padding-top: 20px;
 }
-.article::after {
+.services__article::after,
+.team__article::after {
   content: "";
   display: block;
   width: 60px;
@@ -227,22 +220,16 @@ button {
   opacity: 1;
 }
 .site-navigation__article {
-  margin: 0;
-  padding: 0;
-  font-family: "Kaushan Script";
   font-size: 72px;
   line-height: 86px;
-  font-weight: 400;
   text-transform: capitalize;
   color: #ffffff;
   text-align: center;
   padding-bottom: 110px;
 }
 .site-navigation__article--span {
-  font-family: "Montserrat";
   font-size: 150px;
   line-height: 180px;
-  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -260,7 +247,6 @@ button {
   line-height: 17px;
   font-weight: 700;
   color: #ffffff;
-  cursor: pointer;
 }
 
 /* Main */
@@ -272,7 +258,6 @@ button {
 .services {
   padding-bottom: 100px;
 }
-
 .services-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +315,17 @@ button {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+.services__article,
+.team__article {
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* OUR TEAM */
