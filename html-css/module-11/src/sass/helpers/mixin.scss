@@ -24,6 +24,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
   } @else if $type== 'column' {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 }
