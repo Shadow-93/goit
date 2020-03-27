@@ -1,0 +1,13 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+.logo__link {
+  @extend%link;
+  color: $head-color;
+  font-family: $article-span-font;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}

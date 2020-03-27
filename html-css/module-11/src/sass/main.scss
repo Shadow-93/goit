@@ -1,0 +1,27 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'normalize';
+@import 'base';
+
+// Components
+
+// @import 'components/fonts';
+@import 'components/button';
+@import 'components/container';
+@import 'components/article';
+@import 'components/banner';
+@import 'components/site-navigation';
+@import 'components/logo';
+@import 'components/container';
+@import 'components/navigation-menu';
+@import 'components/main-content';
+@import 'components/services';
+@import 'components/team';
+@import 'components/sosials';
+@import 'components/position';
+@import 'components/info';
+@import 'components/input';

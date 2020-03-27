@@ -1,0 +1,61 @@
+.sosials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 224px;
+  height: 56px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.sosial-link {
+  @extend %link;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: $yellow-color;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+
+  &:hover .sosial-icons {
+    fill: $head-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $pink-color;
+  }
+}
+.sosial-icons {
+  display: block;
+  width: 26px;
+  height: 26px;
+  fill: $pink-color;
+
+  &:not(:last-child) {
+    border-right: 1px solid $pink-color;
+  }
+}
+
+.team-list__items:hover .sosials {
+  opacity: 1;
+}
