@@ -1,0 +1,38 @@
+@mixin flex($type: 'all') {
+  display: -webkit-box;
+  display: flex;
+  @if $type== 'all' {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  } @else if $type== 'between' {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  } @else if $type== 'hor' {
+    -webkit-box-pack: center;
+    justify-content: center;
+  } @else if $type== 'ver' {
+    -webkit-box-align: center;
+    align-items: center;
+  } @else if $type== 'between-center' {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+  } @else if $type== 'wrap-around' {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } @else if $type== 'column' {
+    flex-direction: column;
+  }
+}
+
+@mixin indent($type: 'all') {
+  @if $type== 'all' {
+    margin: 0;
+    padding: 0;
+  } @else if $type== 'center' {
+    margin: 0 auto;
+  }
+}

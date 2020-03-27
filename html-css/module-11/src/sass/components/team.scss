@@ -5,12 +5,7 @@
 }
 .team-list {
   @extend %list;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  @include flex($type: 'between');
   padding-top: 90px;
 
   &__items:hover .overlay {

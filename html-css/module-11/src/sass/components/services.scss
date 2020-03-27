@@ -3,13 +3,7 @@
 }
 .services-list {
   @extend %list;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  @include flex($type: 'wrap-around');
 }
 .services-list__item {
   -webkit-box-flex: 0;
@@ -67,11 +61,5 @@
 .services__article,
 .team__article {
   color: $main-color;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  @include flex($type: column);
 }

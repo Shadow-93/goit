@@ -1,16 +1,8 @@
 .info {
+  @include flex($type: 'between-center');
   height: 62px;
   border-top: 1px solid $border-color;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: $main-color;
   font-family: $article-span-font;
   font-size: 14px;
@@ -22,16 +14,10 @@
   color: $pink-color;
 }
 .info__email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  @include flex($type: 'between');
 }
 .info__subscribe {
-  padding: 0;
-  margin: 0;
+  @include flex($type: 'indent');
   width: 150px;
   height: 40px;
   color: $head-color;

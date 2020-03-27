@@ -1,11 +1,10 @@
 .article {
-  margin: 0;
-  padding: 0;
+  @include indent($type: 'all');
+  text-align: center;
   font-family: $article-font;
   font-size: 24px;
   line-height: 27px;
   font-weight: 400;
-  text-align: center;
 }
 .article--span {
   font-family: $article-span-font;

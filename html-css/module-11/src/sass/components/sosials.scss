@@ -1,12 +1,6 @@
 .sosials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  @include flex($type: 'between');
+  @include indent($type: 'all');
   width: 224px;
   height: 56px;
   opacity: 0;
@@ -19,19 +13,10 @@
 }
 .sosial-link {
   @extend %link;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include flex($type: 'all');
   width: 56px;
   height: 56px;
   background-color: $yellow-color;
-  cursor: pointer;
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
